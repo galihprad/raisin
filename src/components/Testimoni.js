@@ -9,7 +9,7 @@ class Testimoni extends Component {
       <div
         style={{
           marginTop: '50px',
-          marginBottom: '50px',
+          marginBottom: '25px',
           paddingBottom: '20px',
           fontFamily: 'Montserrat',
           backgroundSize: '100%',

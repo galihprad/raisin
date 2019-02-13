@@ -8,7 +8,7 @@ class ContactUs extends Component {
     return (
       <div
         style={{
-          marginTop: '50px',
+          marginTop: '25px',
           marginBottom: '50px',
           fontFamily: 'Montserrat',
         }}
