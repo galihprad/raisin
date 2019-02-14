@@ -6,7 +6,6 @@ import Pro1 from '../images/pro1.png'
 function callback(key) {}
 
 const TabPane = Tabs.TabPane
-const { Meta } = Card
 
 class LatesProject extends Component {
   state = {
@@ -35,7 +34,9 @@ class LatesProject extends Component {
             fontSize: '150px',
             color: '#F7F6FE',
             marginBottom: '-100px',
-            marginLeft: '75px',
+
+            marginLeft: '0px',
+
             fontWeight: '700',
           }}
         >
