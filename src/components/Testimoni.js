@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Carousel, Row, Avatar } from 'antd'
+import ScrollAnimation from 'react-animate-on-scroll'
 import './layout.css'
 import Buble from '../images/buble.png'
 
@@ -18,28 +19,32 @@ class Testimoni extends Component {
         }}
       >
         <Row type="flex" justify="end">
-          <p
-            style={{
-              fontSize: '150px',
-              color: '#F7F6FE',
-              marginBottom: '-110px',
-              fontWeight: '700',
-            }}
-          >
-            04
-          </p>
+          <ScrollAnimation animateIn="fadeInUp">
+            <p
+              style={{
+                fontSize: '150px',
+                color: '#F7F6FE',
+                marginBottom: '-110px',
+                fontWeight: '700',
+              }}
+            >
+              04
+            </p>
+          </ScrollAnimation>
         </Row>
         <Row type="flex" justify="center">
-          <h3
-            style={{
-              color: '#E96479',
-              marginBottom: '50px',
-              fontWeight: '700',
-              letterSpacing: '3px',
-            }}
-          >
-            TESTIMONIAL
-          </h3>
+          <ScrollAnimation animateIn="tada">
+            <h3
+              style={{
+                color: '#E96479',
+                marginBottom: '50px',
+                fontWeight: '700',
+                letterSpacing: '3px',
+              }}
+            >
+              TESTIMONIAL
+            </h3>
+          </ScrollAnimation>
         </Row>
         <Carousel autoplay>
           <div>

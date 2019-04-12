@@ -640,3 +640,72 @@ pre tt:after {
 .ant-carousel .slick-slide h3 {
   color: black;
 }
+.ant-card-hoverable:hover {
+  box-shadow: none !important;
+}
+
+.raisin-nav a {
+  color: #000;
+}
+
+.raisin-nav a:hover {
+  color: #ed1f79 !important;
+}
+
+.raisin-nav a,
+.raisin-nav a:after,
+.raisin-nav a:before {
+  transition: all 0.5s;
+}
+
+.raisin-nav a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.raisin-nav a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #ed1f79;
+  height: 2px;
+}
+.raisin-nav a:hover:after {
+  width: 80%;
+}
+.raisin-nav a.active {
+  color: #ed1f79 !important;
+}
+
+.raisin-nav a.active:after {
+  width: 80%;
+}
+
+.raisin-nav {
+  font-size: 0.82rem !important;
+  letter-spacing: 0.1em;
+}
+
+.ant-dropdown {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(233, 100, 121, 0.9);
+  height: 500px;
+}
+
+.raisin-menu {
+  height: 500px !important;
+  align-items: center;
+}
+.raisin-link {
+  color: #f1f1f1 !important;
+}

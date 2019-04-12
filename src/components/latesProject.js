@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Tabs, Row, Card, Button } from 'antd'
+import ScrollAnimation from 'react-animate-on-scroll'
 import './layout.css'
 import Pro1 from '../images/pro1.png'
 
@@ -29,30 +30,35 @@ class LatesProject extends Component {
           fontFamily: 'Montserrat',
         }}
       >
-        <p
-          style={{
-            fontSize: '150px',
-            color: '#F7F6FE',
-            marginBottom: '-100px',
+        <ScrollAnimation animateIn="fadeInDown">
+          <p
+            style={{
+              fontSize: '150px',
+              color: '#F7F6FE',
+              marginBottom: '-100px',
 
-            marginLeft: '0px',
+              marginLeft: '0px',
 
-            fontWeight: '700',
-          }}
+              fontWeight: '700',
+            }}
+          >
+            03
+          </p>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInRight">
+          <h3
+            style={{
+              color: '#E96479',
+              marginBottom: '50px',
+              fontWeight: '700',
+              letterSpacing: '3px',
+              paddingLeft: '20px',
+            }}
+          >
+            LATEST PROJECT
+          </h3>
+        </ScrollAnimation>
         >
-          03
-        </p>
-        <h3
-          style={{
-            color: '#E96479',
-            marginBottom: '50px',
-            fontWeight: '700',
-            letterSpacing: '3px',
-            paddingLeft: '20px',
-          }}
-        >
-          LATEST PROJECT
-        </h3>
         <Row type="flex" justify="center">
           <Tabs
             // type="primary"

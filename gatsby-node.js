@@ -15,3 +15,11 @@ exports.onCreateBabelConfig = ({ actions }) => {
     },
   })
 }
+
+// exports.onCreateWebpackConfig = ({ loader }) => {
+//   actions.setWebpackConfig({
+//     module: {
+//       loaders: [{ test: /\.css$/, loader: 'style-loader!css-loader' }],
+//     },
+//   })
+// }

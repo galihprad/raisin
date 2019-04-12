@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'antd'
 import 'antd/dist/antd.css'
+import ScrollAnimation from 'react-animate-on-scroll'
 import Ser from '../images/ser.png'
 import Ser1 from '../images/ser1.png'
 import Ser2 from '../images/ser2.png'
@@ -29,28 +30,34 @@ class StoryService extends Component {
                 fontWeight: '700',
               }}
             >
-              01
+              <ScrollAnimation animateIn="fadeInDown" style={{ zIndex: '1' }}>
+                01
+              </ScrollAnimation>
             </p>
-            <h3
-              style={{
-                color: '#E96479',
-                marginBottom: '20px',
-                fontWeight: '700',
-                letterSpacing: '3px',
-              }}
-            >
-              SIMPLE STORY
-            </h3>
-            <p style={{ fontSize: '12px' }}>
-              Ipsum has been the industry's standard dummy text ever since the
-              1500s, when an unknown printer took a galley of type and scrambled
-              it to make a type specimen book. It has survived not only five
-              centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged. It was popularised in the 1960s
-              with the release of Letraset sheets containing Lorem Ipsum
-              passages, and more recently with desktop publishing software like
-              Aldus PageMaker including versions of Lorem Ipsum
-            </p>
+
+            <ScrollAnimation animateIn="tada">
+              <h3
+                style={{
+                  color: '#E96479',
+                  marginBottom: '20px',
+                  fontWeight: '700',
+                  letterSpacing: '3px',
+                  zIndex: '12',
+                }}
+              >
+                SIMPLE STORY
+              </h3>
+              <p style={{ fontSize: '12px' }}>
+                Ipsum has been the industry's standard dummy text ever since the
+                1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not
+                only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised
+                in the 1960s with the release of Letraset sheets containing
+                Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum
+              </p>
+            </ScrollAnimation>
           </Col>
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>
             <Row>
@@ -64,19 +71,22 @@ class StoryService extends Component {
               />
               <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                 <Row type="flex" justify="end">
-                  <p
-                    style={{
-                      fontSize: '150px',
-                      color: '#F7F6FE',
-                      fontWeight: '700',
-                      marginBottom: '-200px',
-                    }}
-                  >
-                    02
-                  </p>
+                  <ScrollAnimation animateIn="fadeInDown">
+                    <p
+                      style={{
+                        fontSize: '150px',
+                        color: '#F7F6FE',
+                        fontWeight: '700',
+                        marginBottom: '-200px',
+                      }}
+                    >
+                      02
+                    </p>
+                  </ScrollAnimation>
                 </Row>
 
-                <div
+                <ScrollAnimation
+                  animateIn="fadeInLeft"
                   style={{
                     marginBottom: '50px',
                     padding: '20px',
@@ -122,7 +132,7 @@ class StoryService extends Component {
                       <img alt="example" src={Ser4} />
                     </Col>
                   </Row>
-                </div>
+                </ScrollAnimation>
               </Col>
             </Row>
           </Col>

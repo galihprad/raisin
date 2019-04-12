@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
+import Nav from './Nav'
 import './layout.css'
 import Footer from './footer'
 
@@ -19,7 +20,8 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle="raisin" /*{data.site.siteMetadata.title}*/ />
+        <Nav />
+
         <div
           style={{
             margin: `0 auto`,

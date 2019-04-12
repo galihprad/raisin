@@ -16,7 +16,7 @@ const Footer = () => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
-        height: '300px',
+        height: 'auto',
       }}
     >
       <h1 style={{ margin: 0, color: `white` }}>
@@ -58,16 +58,16 @@ const Footer = () => (
           }}
         />
         <Row type="flex" justify="center">
-          <h5
+          <h6
             style={{
               color: `white`,
               marginTop: '20px',
-              marginBottom: '30px',
+              marginBottom: '0',
               fontFamily: 'Quicksand',
             }}
           >
             2018. Made with love in Yogyakarta. @raisin
-          </h5>
+          </h6>
         </Row>
       </h1>
     </div>

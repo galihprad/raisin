@@ -1,16 +1,20 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: `grey`,
+      background: `#fff`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
+        display: `flex`,
+        justifyContent: `space-between`,
+        alignItems: `center`,
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
@@ -24,10 +28,15 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <img
+            style={{
+              width: '180px',
+            }}
+            src="./images/raisin_logo.png"
+          />
         </Link>
       </span>
-      <Link to="/page-2/">Go to page 2</Link>
+      <Navbar />
     </div>
   </div>
 )
